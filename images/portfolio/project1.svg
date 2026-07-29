@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a" />
+      <stop offset="100%" style="stop-color:#111827" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#bg4)" />
+  
+  <!-- Shopping cart icon -->
+  <g transform="translate(400, 120)">
+    <path d="M-40,-20 L-30,-20 L-10,30 L50,30 L60,0 L-5,0" fill="none" stroke="#0066ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="-5" cy="40" r="8" fill="#1a2332" stroke="#0066ff" stroke-width="2" />
+    <circle cx="45" cy="40" r="8" fill="#1a2332" stroke="#0066ff" stroke-width="2" />
+  </g>
+  
+  <!-- Product cards -->
+  <rect x="150" y="180" width="120" height="150" rx="10" fill="#1a2332" stroke="#1e3a5f" stroke-width="1.5" />
+  <rect x="160" y="190" width="100" height="70" rx="5" fill="#111827" />
+  <rect x="160" y="270" width="80" height="10" rx="3" fill="#334155" />
+  <rect x="160" y="290" width="60" height="8" rx="3" fill="#1e3a5f" />
+  <rect x="160" y="305" width="40" height="15" rx="5" fill="#0066ff" />
+  
+  <rect x="300" y="180" width="120" height="150" rx="10" fill="#1a2332" stroke="#1e3a5f" stroke-width="1.5" />
+  <rect x="310" y="190" width="100" height="70" rx="5" fill="#111827" />
+  <rect x="310" y="270" width="80" height="10" rx="3" fill="#334155" />
+  <rect x="310" y="290" width="60" height="8" rx="3" fill="#1e3a5f" />
+  <rect x="310" y="305" width="40" height="15" rx="5" fill="#0066ff" />
+  
+  <rect x="450" y="180" width="120" height="150" rx="10" fill="#1a2332" stroke="#1e3a5f" stroke-width="1.5" />
+  <rect x="460" y="190" width="100" height="70" rx="5" fill="#111827" />
+  <rect x="460" y="270" width="80" height="10" rx="3" fill="#334155" />
+  <rect x="460" y="290" width="60" height="8" rx="3" fill="#1e3a5f" />
+  <rect x="460" y="305" width="40" height="15" rx="5" fill="#0066ff" />
+  
+  <!-- Price tags -->
+  <text x="210" y="320" font-family="sans-serif" font-size="10" fill="white">$99</text>
+  <text x="360" y="320" font-family="sans-serif" font-size="10" fill="white">$149</text>
+  <text x="510" y="320" font-family="sans-serif" font-size="10" fill="white">$79</text>
+  
+  <!-- Payment icon -->
+  <rect x="600" y="200" width="80" height="50" rx="8" fill="#1a2332" stroke="#10b981" stroke-width="2" />
+  <rect x="610" y="210" width="60" height="8" rx="2" fill="#10b981" opacity="0.5" />
+  <rect x="610" y="225" width="40" height="8" rx="2" fill="#10b981" opacity="0.3" />
+  <text x="615" y="245" font-family="sans-serif" font-size="10" fill="#10b981">Secure</text>
+</svg>

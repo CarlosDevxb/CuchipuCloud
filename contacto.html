@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Cuchipu Cloud - Solicita un presupuesto o consulta sobre nuestros servicios">
+    <meta name="robots" content="index, follow">
+    <title>Contacto - Cuchipu Cloud</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cuchipu.cloud/contacto.html">
+    <meta property="og:title" content="Contacto - Cuchipu Cloud">
+    <meta property="og:description" content="Contacta a Cuchipu Cloud para solicitar un presupuesto o consulta sobre nuestros servicios.">
+    <meta property="og:image" content="https://cuchipu.cloud/images/CuchipuCloud.png">
+    <meta property="og:site_name" content="Cuchipu Cloud">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cuchipu_cloud">
+    <meta name="twitter:title" content="Contacto - Cuchipu Cloud">
+    <meta name="twitter:description" content="Contacta a Cuchipu Cloud para solicitar un presupuesto o consulta sobre nuestros servicios.">
+    <meta name="twitter:image" content="https://cuchipu.cloud/images/CuchipuCloud.png">
+    <link rel="icon" type="image/png" href="images/CuchipuCloud.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cookies.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container page-header-content">
+                <nav class="breadcrumb">
+                    <span class="breadcrumb-item"><a href="index.html">Inicio</a></span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item">Contacto</span>
+                </nav>
+                <h1 class="page-title">Contáctanos</h1>
+                <p class="page-description">Estamos listos para ayudarte a hacer realidad tu próximo proyecto</p>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-animate="fade-right">
+                        <h3 class="contact-info-title">Hablemos sobre tu proyecto</h3>
+                        <p class="contact-info-description">
+                            Cuéntanos tu idea y te ayudaremos a convertirla en realidad. Nuestro equipo está listo para responder todas tus preguntas.
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-method-icon">📧</div>
+                                <div class="contact-method-content">
+                                    <div class="contact-method-label">Email</div>
+                                    <div class="contact-method-value">cuchinetworks@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">📱</div>
+                                <div class="contact-method-content">
+                                    <div class="contact-method-label">Teléfono</div>
+                                    <div class="contact-method-value">+52 (844) 256-4567</div>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">📍</div>
+                                <div class="contact-method-content">
+                                    <div class="contact-method-label">Ubicación</div>
+                                    <div class="contact-method-value">Saltillo, Coahuila, MX </div>
+                                    <div class="contact-method-value">Ramos Arizpe, Coahuila, MX </div>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">⏰</div>
+                                <div class="contact-method-content">
+                                    <div class="contact-method-label">Horario</div>
+                                    <div class="contact-method-value">Lun - Vie: 9:00 - 18:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper" data-animate="fade-left">
+                        <h3 class="contact-form-title">Envíanos un mensaje</h3>
+                        <form id="contactForm">
+                            <div class="contact-form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nombre completo</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required>
+                                    <div class="form-error" id="nameError"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                                    <div class="form-error" id="emailError"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Servicio de interés</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="web">Desarrollo Web</option>
+                                    <option value="software">Desarrollo de Software</option>
+                                    <option value="cloud">Servicios Cloud</option>
+                                    <option value="redes">Redes e Infraestructura</option>
+                                    <option value="seguridad">Ciberseguridad</option>
+                                    <option value="consultoria">Consultoría IT</option>
+                                </select>
+                                <div class="form-error" id="serviceError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Cuéntanos sobre tu proyecto..." rows="5" required></textarea>
+                                <div class="form-error" id="messageError"></div>
+                            </div>
+                            <div class="form-group form-checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">
+                                    Acepto los <a href="terminos.html">Términos y Condiciones</a> y la <a href="privacidad.html">Política de Privacidad</a>
+                                </label>
+                                <div class="form-error" id="termsError"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg form-submit-btn">Enviar Mensaje →</button>
+                            <div class="form-success" id="formSuccess" style="display: none;">
+                                ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employment Section -->
+        <section class="section employment-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trabaja con Nosotros</h2>
+                    <p class="section-subtitle">¿Te apasiona la tecnología? Únete a nuestro equipo. Envíanos tu CV y cuéntanos sobre ti.</p>
+                </div>
+                <div class="employment-content">
+                    <div class="employment-info" data-animate="fade-right">
+                        <div class="employment-benefits">
+                            <div class="employment-benefit">
+                                <div class="employment-benefit-icon">🚀</div>
+                                <div class="employment-benefit-text">
+                                    <h4>Crecimiento profesional</h4>
+                                    <p>Proyectos desafiantes que impulsan tu desarrollo</p>
+                                </div>
+                            </div>
+                            <div class="employment-benefit">
+                                <div class="employment-benefit-icon">💡</div>
+                                <div class="employment-benefit-text">
+                                    <h4>Tecnología de punta</h4>
+                                    <p>Trabajamos con las herramientas más modernas</p>
+                                </div>
+                            </div>
+                            <div class="employment-benefit">
+                                <div class="employment-benefit-icon">🤝</div>
+                                <div class="employment-benefit-text">
+                                    <h4>Equipo colaborativo</h4>
+                                    <p>Ambiente de trabajo donde todas las ideas cuentan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employment-form-wrapper" data-animate="fade-left">
+                        <div class="employment-iframe-container">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSff7NpGbBAUiFqeV7c6SGTO-gVZmxi2cMTTdenrVsMOdCtwKQ/viewform?embedded=true"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0"
+                                loading="lazy"
+                                title="Formulario de empleo - Cuchipu Cloud"
+                            >Cargando…</iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f1a" />
+      <stop offset="100%" style="stop-color:#111827" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#bg7)" />
+  
+  <!-- Network topology -->
+  <!-- Central router -->
+  <circle cx="400" cy="200" r="40" fill="#1a2332" stroke="#0066ff" stroke-width="3" />
+  <text x="380" y="205" font-family="sans-serif" font-size="14" fill="#0066ff" font-weight="bold">R</text>
+  
+  <!-- Connected nodes -->
+  <circle cx="200" cy="120" r="25" fill="#1a2332" stroke="#00d4ff" stroke-width="2" />
+  <text x="190" y="125" font-family="sans-serif" font-size="10" fill="#00d4ff">PC</text>
+  
+  <circle cx="600" cy="120" r="25" fill="#1a2332" stroke="#00d4ff" stroke-width="2" />
+  <text x="590" y="125" font-family="sans-serif" font-size="10" fill="#00d4ff">PC</text>
+  
+  <circle cx="200" cy="280" r="25" fill="#1a2332" stroke="#10b981" stroke-width="2" />
+  <text x="190" y="285" font-family="sans-serif" font-size="10" fill="#10b981">SV</text>
+  
+  <circle cx="600" cy="280" r="25" fill="#1a2332" stroke="#10b981" stroke-width="2" />
+  <text x="590" y="285" font-family="sans-serif" font-size="10" fill="#10b981">SV</text>
+  
+  <circle cx="300" cy="80" r="20" fill="#1a2332" stroke="#f59e0b" stroke-width="2" />
+  <text x="290" y="85" font-family="sans-serif" font-size="10" fill="#f59e0b">📱</text>
+  
+  <circle cx="500" cy="80" r="20" fill="#1a2332" stroke="#f59e0b" stroke-width="2" />
+  <text x="490" y="85" font-family="sans-serif" font-size="10" fill="#f59e0b">📱</text>
+  
+  <circle cx="300" cy="320" r="20" fill="#1a2332" stroke="#8b5cf6" stroke-width="2" />
+  <text x="290" y="325" font-family="sans-serif" font-size="10" fill="#8b5cf6">🖨️</text>
+  
+  <circle cx="500" cy="320" r="20" fill="#1a2332" stroke="#8b5cf6" stroke-width="2" />
+  <text x="490" y="325" font-family="sans-serif" font-size="10" fill="#8b5cf6">📹</text>
+  
+  <!-- Connection lines -->
+  <line x1="225" y1="130" x2="365" y2="185" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" />
+  <line x1="575" y1="130" x2="435" y2="185" stroke="#00d4ff" stroke-width="1.5" opacity="0.5" />
+  <line x1="220" y1="270" x2="365" y2="215" stroke="#10b981" stroke-width="1.5" opacity="0.5" />
+  <line x1="580" y1="270" x2="435" y2="215" stroke="#10b981" stroke-width="1.5" opacity="0.5" />
+  <line x1="315" y1="90" x2="375" y2="170" stroke="#f59e0b" stroke-width="1.5" opacity="0.5" />
+  <line x1="485" y1="90" x2="425" y2="170" stroke="#f59e0b" stroke-width="1.5" opacity="0.5" />
+  <line x1="315" y1="310" x2="375" y2="230" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5" />
+  <line x1="485" y1="310" x2="425" y2="230" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5" />
+  
+  <!-- Switch -->
+  <rect x="350" y="360" width="100" height="30" rx="6" fill="#1a2332" stroke="#0066ff" stroke-width="1.5" />
+  <text x="370" y="380" font-family="sans-serif" font-size="10" fill="#0066ff">Switch L3</text>
+  
+  <!-- Stats -->
+  <rect x="50" y="350" width="120" height="40" rx="6" fill="#111827" stroke="#1e3a5f" stroke-width="1" />
+  <text x="60" y="375" font-family="sans-serif" font-size="10" fill="#10b981">500+ Usuarios</text>
+  
+  <rect x="630" y="350" width="120" height="40" rx="6" fill="#111827" stroke="#1e3a5f" stroke-width="1" />
+  <text x="640" y="375" font-family="sans-serif" font-size="10" fill="#0066ff">10Gbps</text>
+</svg>

@@ -1,0 +1,12 @@
+# robots.txt - Cuchipu Cloud
+# https://cuchipu.cloud
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://cuchipu.cloud/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1

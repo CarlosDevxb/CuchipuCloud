@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página no encontrada - Cuchipu Cloud">
+    <meta name="robots" content="noindex, nofollow">
+    <title>404 - Página No Encontrada | Cuchipu Cloud</title>
+    <link rel="icon" type="image/png" href="images/CuchipuCloud.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <style>
+        .error-page {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-8);
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: var(--font-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--space-4);
+        }
+        .error-title {
+            font-size: var(--text-3xl);
+            font-weight: var(--font-semibold);
+            margin-bottom: var(--space-4);
+            color: var(--white);
+        }
+        .error-description {
+            font-size: var(--text-lg);
+            color: var(--gray-400);
+            margin-bottom: var(--space-8);
+            line-height: var(--leading-relaxed);
+        }
+        .error-search {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-8);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .error-search input {
+            flex: 1;
+            padding: var(--space-3) var(--space-4);
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: var(--radius-lg);
+            color: var(--white);
+            font-size: var(--text-base);
+        }
+        .error-search input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+        }
+        .error-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+            justify-content: center;
+        }
+        .error-link {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-5);
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: var(--radius-lg);
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: all var(--transition-base);
+        }
+        .error-link:hover {
+            border-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .error-link-icon {
+            font-size: var(--text-xl);
+        }
+        .error-decoration {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: var(--gradient-glow);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .error-decoration-1 {
+            top: 10%;
+            left: 10%;
+        }
+        .error-decoration-2 {
+            bottom: 10%;
+            right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="error-page">
+            <div class="error-decoration error-decoration-1"></div>
+            <div class="error-decoration error-decoration-2"></div>
+            <div class="error-content">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Página No Encontrada</h1>
+                <p class="error-description">
+                    Lo sentimos, la página que buscas no existe o ha sido movida. 
+                    Quizás puedas encontrar lo que necesitas en uno de estos enlaces.
+                </p>
+                
+                <div class="error-search">
+                    <input type="text" placeholder="Buscar en el sitio..." id="searchInput" aria-label="Buscar">
+                    <a href="index.html" class="btn btn-primary">Buscar</a>
+                </div>
+
+                <div class="error-links">
+                    <a href="index.html" class="error-link">
+                        <span class="error-link-icon">🏠</span>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="servicios.html" class="error-link">
+                        <span class="error-link-icon">⚙️</span>
+                        <span>Servicios</span>
+                    </a>
+                    <a href="portafolio.html" class="error-link">
+                        <span class="error-link-icon">💼</span>
+                        <span>Portafolio</span>
+                    </a>
+                    <a href="contacto.html" class="error-link">
+                        <span class="error-link-icon">📧</span>
+                        <span>Contacto</span>
+                    </a>
+                    <a href="faq.html" class="error-link">
+                        <span class="error-link-icon">❓</span>
+                        <span>FAQ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>
