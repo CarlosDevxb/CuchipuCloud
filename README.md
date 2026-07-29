@@ -77,21 +77,6 @@ Sitio web corporativo de **Cuchipu Cloud**, empresa de soluciones tecnológicas 
 - **Web server:** Nginx
 - **Tunnel:** Cloudflare Tunnel
 - **Dominio:** [cuchipu.cloud](https://cuchipu.cloud)
-
-### Pasos
-
-```bash
-# 1. Subir archivos al servidor
-scp -r ./* usuario@servidor:/var/www/cuchipu-web/
-
-# 2. Corregir permisos
-sudo chown -R www-data:www-data /var/www/cuchipu-web
-sudo chmod -R 755 /var/www/cuchipu-web
-
-# 3. Verificar y recargar nginx
-sudo nginx -t && sudo systemctl reload nginx
-```
-
 ## Contacto
 
 - **Email:** cuchinetworks@gmail.com
