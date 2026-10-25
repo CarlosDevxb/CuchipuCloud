@@ -77,6 +77,7 @@ Sitio web corporativo de **Cuchipu Cloud**, empresa de soluciones tecnológicas 
 - **Web server:** Nginx
 - **Tunnel:** Cloudflare Tunnel
 - **Dominio:** [cuchipu.cloud](https://cuchipu.cloud)
+- **CI/CD:** GitHub Actions con self-hosted runner (`.github/workflows/main_cuchipucloud.yml`). Cada push a `main` sincroniza el sitio a `/var/www/cuchipucloud` y recarga Nginx.
 ## Contacto
 
 - **Email:** cuchinetworks@gmail.com

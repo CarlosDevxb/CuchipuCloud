@@ -1,29 +1,41 @@
-name: Deploy Cuchipu Cloud
+name: Deploy Cuchipu Cloud (Nginx self-hosted)
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  # Directorio raíz que sirve Nginx (ajustar si es distinto)
+  WEB_ROOT: /var/www/cuchipu-web
 
 jobs:
-  despliegue-web:
-    runs-on: self-hosted
+  deploy:
+    runs-on: [self-hosted, linux]
+    permissions:
+      contents: read
 
     steps:
-    - name: Descargar el código
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Configurar Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20' 
+      - name: Sincronizar archivos al directorio web
+        run: |
+          rsync -av --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude 'README.md' \
+            ./ "$WEB_ROOT/"
 
-    - name: Instalar dependencias
-      run: npm install
+      - name: Validar y recargar Nginx
+        run: |
+          sudo nginx -t
+          sudo systemctl reload nginx
 
-    - name: Compilar el proyecto
-      run: npm run build
-
-    - name: Sincronizar archivos con Nginx
-      # Usamos rsync en lugar de cp porque --delete elimina archivos viejos que ya no existen
-      run: |
-        rsync -av --delete dist/ /var/www/cuchipu-web/
+      - name: Verificar sitio
+        run: curl -fsS -o /dev/null -w "HTTP %{http_code}\n" http://localhost/
