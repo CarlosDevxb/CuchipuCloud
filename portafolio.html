@@ -61,78 +61,61 @@
                     <button class="filter-btn" data-filter="redes">Redes</button>
                 </div>
 
-                <div class="portfolio-grid" id="portfolioGrid">
+      <div class="portfolio-grid" id="portfolioGrid">
+                    
+                    <!-- Proyecto 1: Routix -->
+                    <div class="card portfolio-card" data-category="software" data-animate="fade-up">
+                        <div class="portfolio-card-image">
+                            <!-- Nota: Actualiza las rutas de las imágenes con las capturas o logos reales -->
+                            <img src="images/portfolio/routix.svg" alt="Routix ITAM/ITSM" loading="lazy">
+                            <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-card-category">Software / Backend</span>
+                            <h3 class="portfolio-card-title">Routix</h3>
+                            <p class="portfolio-card-description">Sistema integral ITAM e ITSM para gestión de inventario, tickets y bitácoras de laboratorios, desarrollado con Rust, Axum y PostgreSQL.</p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: MediTec-ITS -->
                     <div class="card portfolio-card" data-category="web" data-animate="fade-up">
                         <div class="portfolio-card-image">
-                            <img src="images/portfolio/project1.svg" alt="E-commerce Platform" loading="lazy">
+                            <img src="images/portfolio/meditec.svg" alt="MediTec-ITS" loading="lazy">
                             <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
                         </div>
                         <div class="portfolio-card-content">
                             <span class="portfolio-card-category">Desarrollo Web</span>
-                            <h3 class="portfolio-card-title">E-commerce Platform</h3>
-                            <p class="portfolio-card-description">Plataforma de comercio electrónico con pasarela de pagos integrada</p>
+                            <h3 class="portfolio-card-title">MediTec-ITS</h3>
+                            <p class="portfolio-card-description">Plataforma de gestión médica y enfermería escolar con kiosco de autoservicio autenticado mediante número de control o seguridad social (NSS).</p>
                         </div>
                     </div>
 
+                    <!-- Proyecto 3: Valy Bordados -->
                     <div class="card portfolio-card" data-category="software" data-animate="fade-up">
                         <div class="portfolio-card-image">
-                            <img src="images/portfolio/project2.svg" alt="Sistema ERP" loading="lazy">
+                            <img src="images/portfolio/valy.svg" alt="Valy Bordados y Uniformes" loading="lazy">
                             <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
                         </div>
                         <div class="portfolio-card-content">
-                            <span class="portfolio-card-category">Software</span>
-                            <h3 class="portfolio-card-title">Sistema de Gestión ERP Para Valy Bordados y Uniformes</h3>
-                            <p class="portfolio-card-description">Sistema integral para gestión de recursos empresariales</p>
+                            <span class="portfolio-card-category">Automatización</span>
+                            <h3 class="portfolio-card-title">Sistema ERP: Valy Bordados</h3>
+                            <p class="portfolio-card-description">Automatización corporativa, rastreo de inventario y gestión de ventas implementada mediante Google Apps Script.</p>
                         </div>
                     </div>
 
+                    <!-- Proyecto 4: Infraestructura Cuchipu Cloud -->
                     <div class="card portfolio-card" data-category="cloud" data-animate="fade-up">
                         <div class="portfolio-card-image">
-                            <img src="images/portfolio/project3.svg" alt="Migración AWS" loading="lazy">
+                            <img src="images/portfolio/cuchipu.svg" alt="Infraestructura Cuchipu Cloud" loading="lazy">
                             <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
                         </div>
                         <div class="portfolio-card-content">
-                            <span class="portfolio-card-category">Cloud</span>
-                            <h3 class="portfolio-card-title">Migración a AWS</h3>
-                            <p class="portfolio-card-description">Migración completa de infraestructura local a Amazon Web Services</p>
+                            <span class="portfolio-card-category">Cloud / Redes</span>
+                            <h3 class="portfolio-card-title">Infraestructura Cuchipu Cloud</h3>
+                            <p class="portfolio-card-description">Arquitectura de servidores Linux locales con despliegue Docker y acceso global seguro mediante Cloudflare Tunnels.</p>
                         </div>
                     </div>
 
-                    <div class="card portfolio-card" data-category="redes" data-animate="fade-up">
-                        <div class="portfolio-card-image">
-                            <img src="images/portfolio/project4.svg" alt="Red Corporativa" loading="lazy">
-                            <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
-                        </div>
-                        <div class="portfolio-card-content">
-                            <span class="portfolio-card-category">Redes</span>
-                            <h3 class="portfolio-card-title">Red Corporativa</h3>
-                            <p class="portfolio-card-description">Diseño e implementación de red empresarial para 500+ usuarios</p>
-                        </div>
-                    </div>
-
-                    <div class="card portfolio-card" data-category="web" data-animate="fade-up">
-                        <div class="portfolio-card-image">
-                            <img src="images/portfolio/project5.svg" alt="Portal Educativo" loading="lazy">
-                            <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
-                        </div>
-                        <div class="portfolio-card-content">
-                            <span class="portfolio-card-category">Desarrollo Web</span>
-                            <h3 class="portfolio-card-title">Portal Educativo</h3>
-                            <p class="portfolio-card-description">Plataforma de aprendizaje online con videoconferencia</p>
-                        </div>
-                    </div>
-
-                    <div class="card portfolio-card" data-category="software" data-animate="fade-up">
-                        <div class="portfolio-card-image">
-                            <img src="images/portfolio/project6.svg" alt="App Delivery" loading="lazy">
-                            <div class="portfolio-card-overlay"><a href="#" class="btn btn-primary">Ver Proyecto</a></div>
-                        </div>
-                        <div class="portfolio-card-content">
-                            <span class="portfolio-card-category">Software</span>
-                            <h3 class="portfolio-card-title">App de Delivery</h3>
-                            <p class="portfolio-card-description">Aplicación móvil para servicio de delivery con seguimiento en tiempo real</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
