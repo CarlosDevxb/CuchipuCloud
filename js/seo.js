@@ -8,7 +8,7 @@ const SEO = (() => {
 
     const SITE_URL = 'https://cuchipu.cloud';
     const SITE_NAME = 'Cuchipu Cloud';
-    const DEFAULT_IMAGE = 'images/CuchipuCloud.png';
+    const DEFAULT_IMAGE = 'images/CuchipuCloud-Claro.png';
     const TWITTER_HANDLE = '@cuchipu_cloud';
 
     const pageConfig = {
@@ -65,7 +65,7 @@ const SEO = (() => {
                 '@type': 'Organization',
                 name: SITE_NAME,
                 url: SITE_URL,
-                logo: SITE_URL + '/images/CuchipuCloud.png',
+                logo: SITE_URL + '/images/CuchipuCloud-Claro.png',
                 description: 'Empresa de desarrollo de software, cloud computing y servicios IT',
                 foundingDate: '2019',
                 numberOfEmployees: { '@type': 'QuantitativeValue', value: 15 },

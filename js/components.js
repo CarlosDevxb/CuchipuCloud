@@ -27,7 +27,7 @@
         <header class="header" id="header">
             <div class="header-container">
                 <a href="index.html" class="logo">
-                    <img src="images/CuchipuCloud.png" alt="Cuchipu Cloud" class="logo-image">
+                    <img src="images/CuchipuCloudIcon-Blanco.png" alt="Cuchipu Cloud" class="logo-image">
                     <span class="logo-text">Cuchipu<span>Cloud</span></span>
                 </a>
                 <nav class="nav" id="nav">
@@ -67,7 +67,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="footer-logo">
-                        <img src="images/CuchipuCloud.png" alt="Cuchipu Cloud" class="footer-logo-image">
+                        <img src="images/CuchipuCloudIcon-Blanco.png" alt="Cuchipu Cloud" class="footer-logo-image">
                         <span class="footer-logo-text">Cuchipu<span>Cloud</span></span>
                     </a>
                     <p class="footer-description">Transformamos ideas en soluciones digitales innovadoras.</p>

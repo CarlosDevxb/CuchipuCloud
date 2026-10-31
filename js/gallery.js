@@ -52,8 +52,8 @@ const Gallery = (() => {
         activeFilter = filter;
 
         portfolioItems.forEach(item => {
-            const category = item.dataset.category;
-            const shouldShow = filter === 'all' || category === filter;
+            const categories = (item.dataset.category || '').split(/\s+/);
+            const shouldShow = filter === 'all' || categories.includes(filter);
 
             if (shouldShow) {
                 showItem(item);
@@ -176,12 +176,23 @@ const Gallery = (() => {
         const title = item.querySelector('.portfolio-card-title');
         const description = item.querySelector('.portfolio-card-description');
         const category = item.querySelector('.portfolio-card-category');
+        const tech = item.querySelector('.portfolio-card-tech');
 
         // Update lightbox content
         document.getElementById('lightboxImage').src = image ? image.src : '';
         document.getElementById('lightboxImage').alt = title ? title.textContent : '';
         document.getElementById('lightboxTitle').textContent = title ? title.textContent : '';
         document.getElementById('lightboxDescription').textContent = description ? description.textContent : '';
+
+        const detailsEl = document.getElementById('lightboxDetails');
+        if (detailsEl) {
+            detailsEl.innerHTML = `
+                <div style="display: flex; gap: var(--space-2); align-items: center; margin-bottom: var(--space-3);">
+                    <span class="badge">${category ? category.textContent : ''}</span>
+                </div>
+                ${tech ? `<div style="margin-top: var(--space-4);"><strong style="color: var(--white); display: block; margin-bottom: var(--space-2); font-size: var(--text-sm);">Tecnologías utilizadas:</strong>${tech.outerHTML}</div>` : ''}
+            `;
+        }
 
         // Show lightbox
         lightbox.classList.add('active');
