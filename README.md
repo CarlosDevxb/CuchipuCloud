@@ -6,7 +6,7 @@ Sitio web corporativo de **Cuchipu Cloud**, empresa de soluciones tecnológicas 
 
 - Desarrollo Web
 - Desarrollo de Software a medida
-- Servicios Cloud (AWS, infraestructura escalable)
+- Servicios Cloud (AWS, Azure, infraestructura escalable)
 - Redes e Infraestructura
 - Ciberseguridad
 - Consultoría IT

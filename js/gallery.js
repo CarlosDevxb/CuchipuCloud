@@ -117,10 +117,14 @@ const Gallery = (() => {
             if (overlay) {
                 const link = overlay.querySelector('a');
                 if (link) {
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        openLightbox(item);
-                    });
+                    const href = link.getAttribute('href');
+                    if (!href || href === '#') {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            openLightbox(item);
+                        });
+                    }
+                }
                 }
             }
         });

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Routix: Network Lab Management System (ITAM & ITSM) para laboratorios de redes y computadoras desarrollado por Cuchipu Cloud con Rust y SolidJS.">
+    <meta name="robots" content="index, follow">
+    <title>Routix - Network Lab Management System | Cuchipu Cloud</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cuchipu.cloud/proyecto-routix.html">
+    <meta property="og:title" content="Routix - Network Lab Management System | Cuchipu Cloud">
+    <meta property="og:description" content="Sistema modular de gestión educativa (ITAM/ITSM) con Rust, Axum, PostgreSQL y SolidJS.">
+    <meta property="og:image" content="https://cuchipu.cloud/images/portfolio/routix.jpg">
+    <meta property="og:site_name" content="Cuchipu Cloud">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cuchipu_cloud">
+    <meta name="twitter:title" content="Routix - Cuchipu Cloud">
+    <meta name="twitter:description" content="ITAM/ITSM para laboratorios de redes y computadoras.">
+    <meta name="twitter:image" content="https://cuchipu.cloud/images/portfolio/routix.jpg">
+    
+    <link rel="icon" type="image/png" href="images/CuchipuCloudIcon-Blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cookies.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Header & Breadcrumb -->
+        <section class="page-header project-detail-hero">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <span class="breadcrumb-item"><a href="index.html">Inicio</a></span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item"><a href="portafolio.html">Portafolio</a></span>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-item">Routix</span>
+                </nav>
+                <div class="project-detail-header" data-animate="fade-up">
+                    <span class="badge project-detail-badge">Software / Redes (ITAM &amp; ITSM)</span>
+                    <h1 class="project-detail-title">Routix</h1>
+                    <p class="project-detail-lead">
+                        Sistema modular de gestión educativa (ITAM/ITSM) para el laboratorio de arquitectura de computadoras y redes, diseñado para administrar inventarios de hardware, refacciones, tickets de soporte, horarios y bitácoras de incidentes para el control operativo de los docentes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content Grid -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="project-detail-grid">
+                    
+                    <!-- Main Column -->
+                    <div class="project-main-content">
+                        
+                        <!-- Logo Showcase -->
+                        <div class="project-showcase-box" data-animate="fade-up">
+                            <img src="images/portfolio/routix.jpg" alt="Logotipo oficial Routix" loading="lazy">
+                        </div>
+
+                        <!-- Overview -->
+                        <div class="project-block" data-animate="fade-up">
+                            <h2 class="project-block-title">
+                                <span class="project-block-title-icon">💻</span>
+                                Sobre el Proyecto
+                            </h2>
+                            <p class="project-block-p">
+                                Los laboratorios académicos de redes y arquitectura de computadoras operan bajo un flujo constante de manipulación de hardware: routers de grado industrial, conmutadores (switches), racks de parcheo, interfaces seriales y decenas de estaciones de trabajo sometidas a pruebas intensivas. La ausencia de un control de inventario especializado provoca pérdida de insumos y retrasos en las prácticas universitarias.
+                            </p>
+                            <p class="project-block-p">
+                                <strong>Routix</strong> fue concebido para resolver este desafío integralmente combinando principios de gestión de activos de TI (ITAM) y gestión de servicios (ITSM), permitiendo al personal docente y laboratoristas auditar cada pieza de hardware, canalizar tickets de falla y coordinar asignaciones de laboratorio en tiempo real.
+                            </p>
+                        </div>
+
+                        <!-- Funcionalidades -->
+                        <div class="project-block" data-animate="fade-up">
+                            <h2 class="project-block-title">
+                                <span class="project-block-title-icon">⚡</span>
+                                Funcionalidades Principales
+                            </h2>
+                            <p class="project-block-p">
+                                Módulos diseñados específicamente para el rigor de la ingeniería y docencia de redes:
+                            </p>
+                            <div class="features-cards-grid">
+                                <div class="feature-item-card">
+                                    <h4>🖥️ Inventario de Hardware (ITAM)</h4>
+                                    <p>Identificación individual de routers, switches Cisco, tarjetas NIC, cables y equipos de cómputo con MAC, IP y número de serie.</p>
+                                </div>
+                                <div class="feature-item-card">
+                                    <h4>🎫 Mesa de Tickets de Soporte (ITSM)</h4>
+                                    <p>Gestión de incidencias técnicas en laboratorio: puertos dañados, fallas de arranque o problemas de cableado con prioridad asignable.</p>
+                                </div>
+                                <div class="feature-item-card">
+                                    <h4>🔧 Stock de Refacciones &amp; Insumos</h4>
+                                    <p>Control de existencias de cables UTP cat 6, fibra óptica, conectores RJ45, crimpadoras, ponchadoras y herramientas de diagnóstico.</p>
+                                </div>
+                                <div class="feature-item-card">
+                                    <h4>📝 Bitácoras Digitales de Incidentes</h4>
+                                    <p>Registro histórico detallado de anomalías ocurridas durante prácticas de laboratorio para seguimiento y mantenimiento preventivo.</p>
+                                </div>
+                                <div class="feature-item-card">
+                                    <h4>⏰ Asignación de Horarios &amp; Laboratorios</h4>
+                                    <p>Programación de sesiones de clase por docente y materia, evitando traslapes y verificando disponibilidad de puestos de trabajo.</p>
+                                </div>
+                                <div class="feature-item-card">
+                                    <h4>⚡ API de Alto Rendimiento en Rust</h4>
+                                    <p>Procesamiento de peticiones con latencia ultra baja (&lt; 2ms) garantizando respuestas fluidas incluso en horas pico de prácticas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Especificaciones Técnicas y Diagrama -->
+                        <div class="project-block" data-animate="fade-up">
+                            <h2 class="project-block-title">
+                                <span class="project-block-title-icon">⚙️</span>
+                                Especificaciones Técnicas
+                            </h2>
+                            <p class="project-block-p">
+                                Routix destaca por una selección de tecnologías de vanguardia enfocadas en rendimiento puro y seguridad de tipos:
+                            </p>
+                            <ul class="specs-checklist">
+                                <li class="specs-checklist-item">
+                                    <span class="specs-check-icon">✓</span>
+                                    <div><strong>Backend en Rust + Framework Axum:</strong> Construido sobre el ecosistema asíncrono Tokio, garantizando cero fugas de memoria, seguridad en tiempo de compilación y una eficiencia de recursos extraordinaria.</div>
+                                </li>
+                                <li class="specs-checklist-item">
+                                    <span class="specs-check-icon">✓</span>
+                                    <div><strong>PostgreSQL con Consultas SQL en Crudo:</strong> Acceso a datos altamente optimizado mediante queries SQL nativas sin intermediarios ORM, logrando transacciones directas a la velocidad del hardware.</div>
+                                </li>
+                                <li class="specs-checklist-item">
+                                    <span class="specs-check-icon">✓</span>
+                                    <div><strong>Frontend Reactivo en SolidJS:</strong> Interfaz moderna compilada a operaciones directas en el DOM real sin la sobrecarga de un Virtual DOM, otorgando una experiencia de usuario instantánea y fluida.</div>
+                                </li>
+                                <li class="specs-checklist-item">
+                                    <span class="specs-check-icon">✓</span>
+                                    <div><strong>Contenedores Docker Ultraligeros:</strong> Empaquetado en imágenes Docker multi-stage de tamaño mínimo para facilitar la portabilidad en infraestructura de servidores Linux.</div>
+                                </li>
+                            </ul>
+
+                            <div class="project-diagram-box">
+                                <img src="images/portfolio/routix.svg" alt="Arquitectura y Topología Routix" loading="lazy">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Sidebar Column -->
+                    <aside class="project-sidebar">
+                        <div class="project-sidebar-box" data-animate="fade-up">
+                            <h3 style="font-size: var(--text-lg); font-weight: var(--font-bold); color: var(--white); margin-bottom: var(--space-4);">
+                                Ficha del Proyecto
+                            </h3>
+
+                            <div class="sidebar-data-row">
+                                <span class="sidebar-data-label">Área / Entorno:</span>
+                                <span class="sidebar-data-val">Laboratorio Redes</span>
+                            </div>
+                            <div class="sidebar-data-row">
+                                <span class="sidebar-data-label">Categoría:</span>
+                                <span class="sidebar-data-val">ITAM / ITSM &amp; Redes</span>
+                            </div>
+                            <div class="sidebar-data-row">
+                                <span class="sidebar-data-label">Tiempo de desarrollo:</span>
+                                <span class="sidebar-data-val" style="color: var(--accent);">4 meses</span>
+                            </div>
+                            <div class="sidebar-data-row">
+                                <span class="sidebar-data-label">Arquitectura:</span>
+                                <span class="sidebar-data-val">Rust + SolidJS</span>
+                            </div>
+                            <div class="sidebar-data-row">
+                                <span class="sidebar-data-label">Estado:</span>
+                                <span class="sidebar-data-val" style="color: var(--success, #10b981);">En Producción</span>
+                            </div>
+
+                            <!-- Tecnologías -->
+                            <div class="sidebar-tech-section">
+                                <div class="sidebar-tech-title">Tecnologías Utilizadas</div>
+                                <div class="sidebar-tech-list">
+                                    <div class="sidebar-tech-item">
+                                        <img src="images/tech/rust.png" alt="Rust">
+                                        <span>Rust (Tokio Backend)</span>
+                                    </div>
+                                    <div class="sidebar-tech-item">
+                                        <img src="images/tech/axum.svg" alt="Axum">
+                                        <span>Axum Web Framework</span>
+                                    </div>
+                                    <div class="sidebar-tech-item">
+                                        <img src="images/tech/postgresql.svg" alt="PostgreSQL">
+                                        <span>PostgreSQL (Raw SQL)</span>
+                                    </div>
+                                    <div class="sidebar-tech-item">
+                                        <img src="images/tech/solidjs.svg" alt="SolidJS">
+                                        <span>SolidJS (UI Reactiva)</span>
+                                    </div>
+                                    <div class="sidebar-tech-item">
+                                        <img src="images/tech/docker.png" alt="Docker">
+                                        <span>Docker Containerized</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-actions">
+                                <a href="contacto.html" class="btn btn-primary" style="width: 100%; text-align: center;">Desarrollar con Rust</a>
+                                <a href="portafolio.html" class="btn btn-outline" style="width: 100%; text-align: center;">← Volver al Portafolio</a>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">¿Requieres sistemas de alto rendimiento y baja latencia?</h2>
+                    <p class="cta-description">Construimos soluciones con tecnologías modernas como Rust, arquitecturas contenerizadas y bases de datos optimizadas.</p>
+                    <div class="cta-actions">
+                        <a href="contacto.html" class="btn btn-secondary btn-lg">Consultar con nuestros ingenieros</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>
